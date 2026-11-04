@@ -16,6 +16,30 @@ node serve.mjs
 (`python3 -m http.server`, `npx serve`, nginx) as long as the site root is the document root.
 Opening files via `file://` will not work because the browser blocks module imports.
 
+## Deploy to GitHub Pages
+
+The site is published from this repository at **https://gdfvinnie.github.io/e-constructions/**.
+
+GitHub Pages serves the repository root of the `main` branch. `.nojekyll` keeps it from running
+Jekyll, so files are served exactly as committed.
+
+To publish a change:
+
+```bash
+npm_config_ignore_scripts=1 git add -A
+git commit -m "Describe the change"
+git push
+```
+
+Pages rebuilds automatically in roughly a minute; no workflow file is needed because there is no
+build step.
+
+**Forms on Pages.** GitHub Pages is static and cannot answer `POST /api/quote` or
+`POST /api/careers`; it returns `405`, so the quote and careers forms will report that the request
+could not be sent. The Node server is what makes them work locally. Before publishing a form that
+must work online, set `quoteEndpoint` / `careersEndpoint` in `js/config.js` to a service or
+serverless function that accepts `multipart/form-data` and application JSON.
+
 ## Pages
 
 | Page | File | Contents |
@@ -230,6 +254,8 @@ data/                          stored quote requests (created at runtime, git-ig
 - Verify every company detail, license number, and contact link.
 - Replace sample projects and testimonials with approved material.
 - Send one test quote request end-to-end and confirm the record lands in `data/quote-requests.jsonl`.
+- Point `quoteEndpoint` and `careersEndpoint` in `js/config.js` at a real endpoint, otherwise the
+  published forms cannot deliver (GitHub Pages answers `405` to form posts).
 - Configure `careersEndpoint` before publishing the careers form; send one test application with a
   CV upload.
 - Update titles, descriptions, and favicon for the real brand.
