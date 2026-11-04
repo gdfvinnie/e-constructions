@@ -1,0 +1,17 @@
+# Submitted quote requests contain visitor details — never commit them.
+data/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Local scratch output
+.check/
+*.log
+
+# Freebuff editor metadata (chats are keyed by these)
+.freebuff/

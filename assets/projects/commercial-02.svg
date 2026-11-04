@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" aria-hidden="true">
+  <defs>
+    <linearGradient id="c2bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef7fb"/><stop offset="1" stop-color="#d2e6f2"/>
+    </linearGradient>
+    <pattern id="c2grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14303f" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#c2bg)"/>
+  <rect width="1200" height="800" fill="url(#c2grid)"/>
+
+  <!-- section cut -->
+  <g stroke="#14303f" fill="none">
+    <path d="M200 700V120h800v580" stroke-width="2" stroke-opacity="0.65"/>
+    <path d="M200 240h800M200 360h800M200 480h800M200 600h800" stroke-opacity="0.3"/>
+    <path d="M200 120l120-70h560l120 70" stroke-opacity="0.5"/>
+    <path d="M320 50v70M880 50v70" stroke-opacity="0.35"/>
+
+    <!-- side floor plates -->
+    <path d="M200 240h180v360H200M1000 240H820v360h180" fill="#ffffff" fill-opacity="0.4" stroke-opacity="0.5"/>
+    <path d="M380 700V240M820 700V240" stroke-opacity="0.35"/>
+    <g stroke-opacity="0.3">
+      <path d="M200 330h180M200 420h180M200 510h180M200 600h180"/>
+      <path d="M1000 330H820M1000 420H820M1000 510H820M1000 600H820"/>
+    </g>
+
+    <!-- escalators -->
+    <g stroke-width="2">
+      <path d="M420 600l150-150M470 600l150-150"/>
+      <path d="M420 600h50M570 450h50"/>
+      <path d="M620 600l150-150M670 600l150-150"/>
+      <path d="M620 600h50M770 450h50"/>
+      <path d="M450 598l14 14M500 598l14 14M650 598l14 14M700 598l14 14" stroke-opacity="0.5" stroke-width="1"/>
+    </g>
+    <path d="M380 450h440" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+
+    <!-- skylight rays -->
+    <g stroke="#d9ebf5" stroke-opacity="0.8" stroke-width="2">
+      <path d="M460 50l80 480M700 50l-40 540M580 50v500"/>
+    </g>
+  </g>
+
+  <!-- atrium UV axis -->
+  <g stroke="#5b16c9" fill="none" stroke-width="2">
+    <path d="M600 740V60M588 60h24"/>
+    <circle cx="600" cy="360" r="7" fill="#5b16c9" stroke="none"/>
+    <path d="M600 360l220-110"/>
+  </g>
+  <g fill="#5b16c9" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="820" y="254">ATRIUM AXIS</text>
+    <text x="612" y="88">SKYLIGHT</text>
+  </g>
+  <g fill="#14303f" fill-opacity="0.45" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="70" y="90">COMMERCIAL / ATRIUM SECTION</text>
+    <text x="978" y="740">PLACEHOLDER</text>
+  </g>
+  <path d="M70 110h300M70 720h1060" stroke="#14303f" stroke-opacity="0.2"/>
+</svg>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Northform Construction, Portland</title>
+  <meta name="description" content="Selected residential, commercial, renovation, and infrastructure projects by Northform Construction across Portland and the Pacific Northwest.">
+  <meta name="theme-color" content="#dcecf6">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell header__inner">
+      <a class="brand" href="index.html" aria-label="Northform Construction — home">
+        <svg class="brand__mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M1 23L23 1M1 31L31 1M9 31L31 9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="1" y="1" width="11" height="11" fill="var(--ultra)"/>
+        </svg>
+        <span class="brand__text"><span class="brand__name">Northform</span><span class="brand__sub">Construction</span></span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="index.html">Home</a></li>
+          <li><a class="primary-nav__link" href="about.html">About Us</a></li>
+          <li><a class="primary-nav__link" href="services.html">Services</a></li>
+          <li><a class="primary-nav__link is-active" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="primary-nav__link" href="process.html">Our Process</a></li>
+          <li><a class="primary-nav__link" href="careers.html">Careers</a></li>
+          <li><a class="primary-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary btn--small header__cta" href="quote.html">
+          Request a Quote
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2 8h11M8 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="menu-toggle__text">Menu</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+      <div class="mobile-menu__inner shell">
+        <p class="eyebrow eyebrow--plain">Navigate</p>
+        <nav aria-label="Mobile">
+          <ul class="mobile-menu__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__footer">
+          <a class="btn btn--primary" href="quote.html">Request a Quote</a>
+          <p class="mobile-menu__note">Portland, Oregon · (503) 555-0142 · hello@northformbuild.com</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="shell page-hero__inner">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>Projects</p>
+          <h1 class="page-hero__title" id="page-title">Work that explains itself.</h1>
+          <p class="page-hero__lede">Housing, workplaces, renewals, and public infrastructure across Portland and the Willamette Valley. Each entry lists the scope, size, and year of delivery.</p>
+        </div>
+        <div class="page-hero__aside">
+          <p><span>Delivered</span>120+ projects since 2009</p>
+          <p><span>Sectors</span>Residential · Commercial · Civil</p>
+          <p><span>Geography</span>Oregon &amp; SW Washington</p>
+          <p><span>Delivery</span>Design-build &amp; negotiated</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--glacier section--projects" aria-labelledby="projects-title">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>Selected work</p>
+          <div class="section-head__main">
+            <h2 class="section-title" id="projects-title">A representative<br>cross-section.</h2>
+            <p class="section-lede">Six projects that show the range of our work: infill housing, a workplace renovation, an adaptive reuse, a pedestrian bridge, a terraced housing development, and a commercial atrium.</p>
+          </div>
+        </header>
+
+        <div class="projects__toolbar reveal">
+          <div class="filters" role="group" aria-label="Filter projects by category">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" type="button" data-filter="residential" aria-pressed="false">Residential</button>
+            <button class="filter" type="button" data-filter="commercial" aria-pressed="false">Commercial</button>
+            <button class="filter" type="button" data-filter="renovation" aria-pressed="false">Renovation</button>
+            <button class="filter" type="button" data-filter="infrastructure" aria-pressed="false">Infrastructure</button>
+          </div>
+          <p class="projects__status" role="status" aria-live="polite" data-projects-status>Showing 6 projects</p>
+        </div>
+
+        <ul class="project-grid" data-project-grid>
+          <li class="project-card" id="riverside-courtyard" data-category="residential">
+            <a class="project-card__link" href="quote.html?service=Residential%20Construction">
+              <figure class="project-card__figure">
+                <img src="assets/projects/residential-01.svg" width="1200" height="800" alt="" aria-hidden="true" loading="lazy" decoding="async">
+              </figure>
+              <div class="project-card__body">
+                <p class="project-card__meta"><span>Residential</span><span class="project-card__location">Sellwood, Portland, OR</span></p>
+                <h3 class="project-card__title">Riverside Courtyard</h3>
+                <p class="project-card__copy">A 14-unit courtyard housing community arranged around a shared garden, with ground-floor live-work spaces, covered bike storage, and a stormwater planter court.</p>
+                <dl class="project-card__facts">
+                  <div><dt>Year</dt><dd class="num">2024</dd></div>
+                  <div><dt>Scope</dt><dd>New build</dd></div>
+                  <div><dt>Size</dt><dd class="num">18,400 sq ft</dd></div>
+                </dl>
+                <p class="project-card__disclaimer">Design-build · 16-month programme · 14 units</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-card" id="merchant-street" data-category="commercial">
+            <a class="project-card__link" href="quote.html?service=Commercial%20Construction">
+              <figure class="project-card__figure">
+                <img src="assets/projects/commercial-01.svg" width="1200" height="800" alt="" aria-hidden="true" loading="lazy" decoding="async">
+              </figure>
+              <div class="project-card__body">
+                <p class="project-card__meta"><span>Commercial</span><span class="project-card__location">Old Town, Portland, OR</span></p>
+                <h3 class="project-card__title">Merchant Street Workspace</h3>
+                <p class="project-card__copy">A four-storey office renovation with a daylit central stair, flexible floor plates, and a rebuilt ground-floor retail frontage. The building stayed partially occupied throughout.</p>
+                <dl class="project-card__facts">
+                  <div><dt>Year</dt><dd class="num">2023</dd></div>
+                  <div><dt>Scope</dt><dd>Tenant improvement</dd></div>
+                  <div><dt>Size</dt><dd class="num">26,000 sq ft</dd></div>
+                </dl>
+                <p class="project-card__disclaimer">Negotiated contract · phased occupancy · after-hours works</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-card" id="foundry-block" data-category="renovation">
+            <a class="project-card__link" href="quote.html?service=Renovation%20and%20Remodeling">
+              <figure class="project-card__figure">
+                <img src="assets/projects/renovation-01.svg" width="1200" height="800" alt="" aria-hidden="true" loading="lazy" decoding="async">
+              </figure>
+              <div class="project-card__body">
+                <p class="project-card__meta"><span>Renovation</span><span class="project-card__location">Central Eastside, Portland, OR</span></p>
+                <h3 class="project-card__title">Foundry Block Renewal</h3>
+                <p class="project-card__copy">A 1920s foundry converted into maker studios, with seismic upgrades, a new service core, and restored timber roof trusses. Existing brick was retained wherever it could be safely repaired.</p>
+                <dl class="project-card__facts">
+                  <div><dt>Year</dt><dd class="num">2022</dd></div>
+                  <div><dt>Scope</dt><dd>Adaptive reuse</dd></div>
+                  <div><dt>Size</dt><dd class="num">31,500 sq ft</dd></div>
+                </dl>
+                <p class="project-card__disclaimer">Design-build · historic review · 22-month programme</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-card" id="north-crossing" data-category="infrastructure">
+            <a class="project-card__link" href="quote.html?service=Civil%20Engineering%20and%20Infrastructure">
+              <figure class="project-card__figure">
+                <img src="assets/projects/infrastructure-01.svg" width="1200" height="800" alt="" aria-hidden="true" loading="lazy" decoding="async">
+              </figure>
+              <div class="project-card__body">
+                <p class="project-card__meta"><span>Infrastructure</span><span class="project-card__location">Vancouver, WA</span></p>
+                <h3 class="project-card__title">North Crossing Viaduct</h3>
+                <p class="project-card__copy">A 410-foot pedestrian and cycle crossing over an active rail corridor, with approach ramps, durable deck finishes, and coordinated road interfaces on both sides.</p>
+                <dl class="project-card__facts">
+                  <div><dt>Year</dt><dd class="num">2021</dd></div>
+                  <div><dt>Scope</dt><dd>Civil structure</dd></div>
+                  <div><dt>Size</dt><dd class="num">410 ft span</dd></div>
+                </dl>
+                <p class="project-card__disclaimer">Public works · rail coordination · staged night closures</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-card" id="alder-terrace" data-category="residential">
+            <a class="project-card__link" href="quote.html?service=Residential%20Construction">
+              <figure class="project-card__figure">
+                <img src="assets/projects/residential-02.svg" width="1200" height="800" alt="" aria-hidden="true" loading="lazy" decoding="async">
+              </figure>
+              <div class="project-card__body">
+                <p class="project-card__meta"><span>Residential</span><span class="project-card__location">Beaverton, OR</span></p>
+                <h3 class="project-card__title">Alder Terrace Homes</h3>
+                <p class="project-card__copy">Nine terraced homes stepping down a sloped site, each with private outdoor space and a shared landscaped walk. Efficient shared infrastructure kept site costs controlled.</p>
+                <dl class="project-card__facts">
+                  <div><dt>Year</dt><dd class="num">2023</dd></div>
+                  <div><dt>Scope</dt><dd>New build</dd></div>
+                  <div><dt>Size</dt><dd class="num">9 homes</dd></div>
+                </dl>
+                <p class="project-card__disclaimer">Design-build · sloped site · shared retaining structures</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-card" id="atrium-house" data-category="commercial">
+            <a class="project-card__link" href="quote.html?service=Commercial%20Construction">
+              <figure class="project-card__figure">
+                <img src="assets/projects/commercial-02.svg" width="1200" height="800" alt="" aria-hidden="true" loading="lazy" decoding="async">
+              </figure>
+              <div class="project-card__body">
+                <p class="project-card__meta"><span>Commercial</span><span class="project-card__location">Hillsboro, OR</span></p>
+                <h3 class="project-card__title">Atrium House</h3>
+                <p class="project-card__copy">A 42,000 sq ft office building organised around a full-height atrium, with vertical circulation, daylight distribution, and clear wayfinding from the lobby to each floor.</p>
+                <dl class="project-card__facts">
+                  <div><dt>Year</dt><dd class="num">2024</dd></div>
+                  <div><dt>Scope</dt><dd>New build</dd></div>
+                  <div><dt>Size</dt><dd class="num">42,000 sq ft</dd></div>
+                </dl>
+                <p class="project-card__disclaimer">Negotiated contract · core and shell · tenant fit-out</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <p class="projects__footnote">Project names, locations, and figures are sample content for this demonstration website. Imagery is architectural artwork, not photography of completed work.</p>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="shell cta-band__inner">
+        <h2 class="cta-band__title" id="cta-title">Have a project like these?</h2>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary" href="quote.html">Request a Quote
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false"><path d="M2 8h11M8 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="services.html">Explore services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer__top">
+        <a class="brand brand--footer" href="index.html" aria-label="Northform Construction — back to home">
+          <svg class="brand__mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M1 23L23 1M1 31L31 1M9 31L31 9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="1" y="1" width="11" height="11" fill="#7b4dff"/>
+          </svg>
+          <span class="brand__text"><span class="brand__name">Northform</span><span class="brand__sub">Construction</span></span>
+        </a>
+        <p class="footer__statement">Considered construction, clearly communicated.</p>
+        <a class="footer__top-link" href="#main">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <p class="footer__label">Explore</p>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label">Services</p>
+          <ul class="footer__links footer__links--plain">
+            <li><a href="services.html#residential">Residential Construction</a></li>
+            <li><a href="services.html#commercial">Commercial Construction</a></li>
+            <li><a href="services.html#renovation">Renovation and Remodeling</a></li>
+            <li><a href="services.html#civil">Civil Engineering and Infrastructure</a></li>
+            <li><a href="services.html#design">Architectural Planning and Design</a></li>
+            <li><a href="services.html#management">Construction Project Management</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__label">Visit</p>
+          <ul class="footer__contact">
+            <li class="footer__contact--address">1420 NW 14th Avenue, Suite 210<br>Portland, OR 97209</li>
+            <li><a href="tel:+15035550142">(503) 555-0142</a></li>
+            <li><a href="mailto:hello@northformbuild.com">hello@northformbuild.com</a></li>
+            <li>Mon–Fri, 7:30am–5:30pm</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Northform Construction · Oregon CCB #204512</p>
+        <p>Demonstration website — company details, projects, and testimonials are sample content.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

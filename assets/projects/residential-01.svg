@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" aria-hidden="true">
+  <defs>
+    <linearGradient id="r1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef7fb"/><stop offset="1" stop-color="#d5e8f3"/>
+    </linearGradient>
+    <pattern id="r1grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14303f" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#r1bg)"/>
+  <rect width="1200" height="800" fill="url(#r1grid)"/>
+  <g stroke="#14303f" fill="none">
+    <!-- stepped terrace volumes -->
+    <path d="M190 545l150-72 150 72v110l-150 72-150-72z" fill="#ffffff" fill-opacity="0.55"/>
+    <path d="M490 545l140-68 140 68v-95l-140-68-140 68z" fill="#ffffff" fill-opacity="0.35"/>
+    <path d="M630 382l140 68v-95l-140-68z" fill="#c4dce9"/>
+    <path d="M190 545v110l150 72v-110M490 545v110l150 72v-110M630 450v110l150 72V522" stroke-opacity="0.55"/>
+    <!-- facades -->
+    <g stroke-opacity="0.4">
+      <path d="M220 590v55M270 566v80M320 542v105M370 566v80M420 590v55"/>
+      <path d="M520 575v55M570 551v80M620 527v105M670 551v80M720 575v55"/>
+      <path d="M650 470v60M700 494v60M750 518v55"/>
+      <path d="M225 612h150M535 597h205M655 493h125"/>
+    </g>
+    <g fill="#14303f" fill-opacity="0.08" stroke="none">
+      <path d="M240 610h40v40h-40zM330 570h40v40h-40zM420 610h30v30h-30z"/>
+      <path d="M550 570h40v40h-40zM650 522h40v35h-40zM700 556h40v35h-40z"/>
+    </g>
+    <!-- courtyard trees -->
+    <g stroke-opacity="0.35">
+      <path d="M300 690v-40M300 670c-30 0-38-30-16-42-6-26 30-38 42-16 24-16 48 12 32 34 20 16 6 40-18 40-10 10-26 10-40-16z"/>
+      <path d="M790 675v-52M790 650c-34 0-44-34-18-48-6-30 34-44 48-18 28-18 56 14 36 40 22 18 6 46-20 46-12 12-30 12-46-20z"/>
+    </g>
+    <!-- balconies and UV accent -->
+    <g stroke="#5b16c9" stroke-width="2">
+      <path d="M490 512h100M490 522h100M540 512v-28"/>
+      <path d="M190 685h600"/>
+    </g>
+  </g>
+  <g fill="#14303f" fill-opacity="0.45" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="70" y="90">RESIDENTIAL / TERRACE STUDY</text>
+    <text x="1010" y="740">PLACEHOLDER</text>
+  </g>
+  <path d="M70 110h230M70 730h1060" stroke="#14303f" stroke-opacity="0.2"/>
+</svg>

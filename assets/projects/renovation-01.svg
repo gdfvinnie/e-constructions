@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" aria-hidden="true">
+  <defs>
+    <linearGradient id="rvbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef7fb"/><stop offset="1" stop-color="#d2e6f2"/>
+    </linearGradient>
+    <pattern id="rvgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14303f" stroke-opacity="0.06"/>
+    </pattern>
+    <pattern id="rvhatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="9" stroke="#14303f" stroke-opacity="0.16"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#rvbg)"/>
+  <rect width="1200" height="800" fill="url(#rvgrid)"/>
+
+  <!-- retained structure -->
+  <g stroke="#14303f" fill="none">
+    <path d="M280 650V330l320-70v390" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M480 650V300l380 85v265" stroke-opacity="0.25" stroke-dasharray="7 7"/>
+    <path d="M280 410l320-70M280 490l320-70M280 570l320-70" stroke-opacity="0.28"/>
+    <path d="M480 385l380 85M480 465l380 85M480 545l380 85" stroke-opacity="0.16"/>
+    <path d="M600 650V220l260 58v372" stroke-width="2" fill="#ffffff" fill-opacity="0.45"/>
+    <path d="M600 650V220l260 58v372M600 650l260 0" stroke-opacity="0.55"/>
+    <g stroke-opacity="0.42">
+      <path d="M640 650V320M700 650V330M760 650V341M820 650V352"/>
+      <path d="M600 350l260 58M600 440l260 58M600 530l260 58"/>
+    </g>
+    <rect x="680" y="372" width="44" height="56" fill="#14303f" fill-opacity="0.08"/>
+    <rect x="640" y="500" width="44" height="56" fill="#14303f" fill-opacity="0.08"/>
+  </g>
+
+  <!-- hatched retained block -->
+  <path d="M280 650V410h160v240z" fill="url(#rvhatch)" stroke="#14303f" stroke-opacity="0.35"/>
+  <path d="M280 570h160M360 410v240" stroke="#14303f" stroke-opacity="0.3"/>
+
+  <!-- new roof and extension -->
+  <g stroke="#5b16c9" fill="none" stroke-width="2">
+    <path d="M600 220l260 58M600 190l260 58M600 190v-26l260 58v-26"/>
+    <path d="M860 278l100-22v394l-100 0"/>
+    <path d="M880 290v368M930 300v358" stroke-opacity="0.5" stroke-width="1.5"/>
+    <path d="M960 356h90M960 430h62"/>
+  </g>
+  <g fill="#5b16c9" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="990" y="360">NEW</text>
+    <text x="866" y="348">ADDITION</text>
+  </g>
+
+  <!-- ground and annotation -->
+  <path d="M160 650h880" stroke="#14303f" stroke-opacity="0.5"/>
+  <g stroke="#14303f" stroke-opacity="0.25">
+    <path d="M160 683h880"/>
+    <path d="M360 650v33M760 650v33"/>
+  </g>
+  <g fill="#14303f" fill-opacity="0.45" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="70" y="90">RENOVATION / RETENTION STUDY</text>
+    <text x="978" y="740">PLACEHOLDER</text>
+    <text x="170" y="740">EXISTING</text>
+    <text x="580" y="740">NEW WORK</text>
+  </g>
+  <path d="M70 110h250M130 720h1000" stroke="#14303f" stroke-opacity="0.2"/>
+</svg>

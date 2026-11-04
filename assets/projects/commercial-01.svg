@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" aria-hidden="true">
+  <defs>
+    <linearGradient id="c1bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef7fb"/><stop offset="1" stop-color="#d2e6f2"/>
+    </linearGradient>
+    <pattern id="c1grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14303f" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#c1bg)"/>
+  <rect width="1200" height="800" fill="url(#c1grid)"/>
+
+  <!-- main tower elevation -->
+  <g stroke="#14303f" fill="none">
+    <path d="M400 120h420v570H400z" fill="#ffffff" fill-opacity="0.5" stroke-width="2"/>
+    <path d="M400 210h420M400 300h420M400 390h420M400 480h420M400 570h420" stroke-opacity="0.45"/>
+    <g stroke-opacity="0.28">
+      <path d="M470 120v570M540 120v570M610 120v570M680 120v570M750 120v570"/>
+    </g>
+    <g fill="#14303f" fill-opacity="0.07" stroke="none">
+      <rect x="475" y="220" width="60" height="70"/><rect x="545" y="220" width="60" height="70"/>
+      <rect x="685" y="310" width="60" height="70"/><rect x="615" y="400" width="60" height="70"/>
+      <rect x="475" y="490" width="60" height="70"/><rect x="755" y="220" width="60" height="70"/>
+    </g>
+    <!-- crown / mechanical -->
+    <path d="M430 120V82h360v38M460 82V56h300v26M520 56V32h180v24" stroke-opacity="0.55"/>
+    <!-- podium -->
+    <path d="M330 690h560v-80H330z" fill="#ffffff" fill-opacity="0.35"/>
+    <path d="M330 610h560M370 690v-80M450 690v-80M530 690v-80M950 690v-80M870 690v-80M790 690v-80M710 690v-80" stroke-opacity="0.32"/>
+    <path d="M250 690h700" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- adjacent low volumes -->
+  <g stroke="#14303f" fill="none" stroke-opacity="0.4">
+    <path d="M130 690V450h170v240M130 530h170M130 610h170M180 450v240M250 450v240"/>
+    <path d="M960 690V510h150v180M960 590h150M1020 510v180"/>
+  </g>
+
+  <!-- ultraviolet facade slice -->
+  <g>
+    <path d="M820 120h-60v570h60" fill="#5b16c9" fill-opacity="0.08" stroke="#5b16c9"/>
+    <path d="M760 120L700 90M820 120l60-30" stroke="#5b16c9"/>
+    <path d="M1010 120v-70M1010 50h100" stroke="#102a38" stroke-opacity="0.35"/>
+    <path d="M890 95h120" stroke="#5b16c9" stroke-dasharray="4 6"/>
+  </g>
+  <g fill="#5b16c9" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="742" y="72">ACTIVE EDGE</text>
+    <text x="70" y="740">COMMERCIAL / CORE STUDY</text>
+  </g>
+  <g fill="#14303f" fill-opacity="0.4" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="1010" y="740">PLACEHOLDER</text>
+  </g>
+  <path d="M70 720h1060" stroke="#14303f" stroke-opacity="0.2"/>
+</svg>

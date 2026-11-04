@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1400" width="2000" height="1400" aria-hidden="true">
+  <defs>
+    <linearGradient id="p-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1a23"/>
+      <stop offset="0.6" stop-color="#142b37"/>
+      <stop offset="1" stop-color="#1a3441"/>
+    </linearGradient>
+    <pattern id="p-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#d9ebf5" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="p-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.1"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="2000" height="1400" fill="url(#p-bg)"/>
+  <rect width="2000" height="1400" fill="url(#p-grid)"/>
+
+  <!-- structural elevation -->
+  <g stroke="#d9ebf5" fill="none" stroke-opacity="0.5">
+    <path d="M390 1080V300h1120v780" stroke-width="2"/>
+    <path d="M390 300l1120 0M390 430h1120M390 560h1120M390 690h1120M390 820h1120M390 950h1120M390 1080h1120"/>
+    <path d="M560 300v780M730 300v780M900 300v780M1070 300v780M1240 300v780M1410 300v780"/>
+  </g>
+  <g stroke="#d9ebf5" stroke-opacity="0.22">
+    <path d="M390 300L1510 1080M1510 300L390 1080M390 690h1120M950 300v780"/>
+  </g>
+
+  <!-- ultraviolet dimension language -->
+  <g stroke="#8b5cff" fill="none">
+    <path d="M330 258h1240M330 244v28M1570 244v28" stroke-width="2"/>
+    <path d="M330 1118h1240M330 1104v28M1570 1104v28"/>
+    <path d="M330 300v780" stroke-dasharray="4 8"/>
+    <path d="M1570 300v780" stroke-dasharray="4 8"/>
+  </g>
+  <g fill="#8b5cff" font-family="ui-monospace, monospace" font-size="22" letter-spacing="4">
+    <text x="890" y="236">GRID 8.4 M</text>
+    <text x="900" y="1168">SECTION A—A</text>
+  </g>
+
+  <!-- vertical light shafts -->
+  <g fill="#d9ebf5" opacity="0.06">
+    <rect x="730" y="300" width="170" height="780"/>
+    <rect x="1070" y="300" width="170" height="780"/>
+  </g>
+  <g fill="#d9ebf5" opacity="0.14">
+    <rect x="902" y="300" width="96" height="780"/>
+  </g>
+
+  <!-- annotations -->
+  <g stroke="#d9ebf5" stroke-opacity="0.35">
+    <path d="M1620 430h120M1620 560h80M1620 690h150M1620 820h100M1620 950h130"/>
+  </g>
+  <g fill="#d9ebf5" opacity="0.45" font-family="ui-monospace, monospace" font-size="16" letter-spacing="2">
+    <text x="1760" y="436">L04</text><text x="1760" y="566">L03</text><text x="1760" y="696">L02</text>
+    <text x="1760" y="826">L01</text><text x="1760" y="956">GF</text>
+    <text x="392" y="1260">EXISTING DATUM</text>
+  </g>
+  <path d="M390 1220h1120" stroke="#d9ebf5" stroke-opacity="0.25" stroke-dasharray="2 10"/>
+  <rect width="2000" height="1400" filter="url(#p-grain)" opacity="0.6"/>
+</svg>

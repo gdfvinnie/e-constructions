@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" aria-hidden="true">
+  <defs>
+    <linearGradient id="r2bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef7fb"/><stop offset="1" stop-color="#d2e6f2"/>
+    </linearGradient>
+    <pattern id="r2grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14303f" stroke-opacity="0.06"/>
+    </pattern>
+    <pattern id="r2hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#14303f" stroke-opacity="0.13"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#r2bg)"/>
+  <rect width="1200" height="800" fill="url(#r2grid)"/>
+
+  <!-- courtyard block plan -->
+  <g stroke="#14303f" fill="none">
+    <path d="M230 180h740v460H230z" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M230 180h160v140H230zM810 180h160v140H810zM230 500h160v140H230zM810 500h160v140H810z" fill="#ffffff" fill-opacity="0.65"/>
+    <path d="M230 320h740M230 500h740M390 180v140M810 180v140M390 500v140M810 500v140" stroke-opacity="0.35"/>
+    <path d="M390 180v460M810 180v460" stroke-opacity="0.25"/>
+
+    <!-- units -->
+    <g stroke-opacity="0.4">
+      <path d="M260 420h300M260 380h300M260 340h300M260 300h300"/>
+      <path d="M300 300v140M350 300v140M400 300v140M450 300v140M500 300v140"/>
+      <path d="M640 420h300M640 380h300M640 340h300M640 300h300"/>
+      <path d="M680 300v140M730 300v140M780 300v140M830 300v140M880 300v140"/>
+    </g>
+    <path d="M260 220h300M640 220h300" stroke-opacity="0.15" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- courtyard -->
+  <rect x="420" y="360" width="360" height="180" fill="url(#r2hatch)" stroke="#14303f" stroke-opacity="0.3"/>
+  <g stroke="#14303f" stroke-opacity="0.45" fill="none">
+    <path d="M600 400v100M560 430c-20-22 0-54 30-40 8-28 50-22 48 8 26 8 22 42-4 46-10 24-46 22-52-4-12 0-20-4-22-10z"/>
+    <path d="M480 380v140M720 380v140"/>
+  </g>
+
+  <!-- circulation and UV annotations -->
+  <g stroke="#5b16c9" stroke-width="2" fill="none">
+    <path d="M600 640V740M600 740h380" stroke-dasharray="6 8"/>
+    <path d="M600 640l180-120"/>
+    <circle cx="600" cy="640" r="5" fill="#5b16c9" stroke="none"/>
+    <path d="M760 300v80M760 380h-60"/>
+    <path d="M200 240h-60v300h60" stroke-opacity="0.5"/>
+  </g>
+  <g fill="#5b16c9" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="250" y="160">PRIMARY ACCESS</text>
+    <text x="774" y="392">COURT</text>
+    <text x="770" y="758">CIRCULATION</text>
+  </g>
+  <g fill="#14303f" fill-opacity="0.45" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="70" y="90">RESIDENTIAL / COURTYARD PLAN</text>
+    <text x="978" y="90">PLACEHOLDER</text>
+  </g>
+  <path d="M70 110h230M960 110h160M70 116h1060" stroke="#14303f" stroke-opacity="0.2"/>
+</svg>
